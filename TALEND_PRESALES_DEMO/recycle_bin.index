@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
+  <deletedFolders>process/Finance/Megha</deletedFolders>
+  <deletedFolders>process/Finance/Megha/TalendDemo</deletedFolders>
+  <deletedFolders>process/Finance/Megha/TalendDemo/Demo_27_May_24</deletedFolders>
+  <deletedFolders>process/Finance/Megha/TalendDemo/Demo_27_May_24/Finance_Mutual_Funds_Demo</deletedFolders>
+  <deletedFolders>process/Manufacture/Megha</deletedFolders>
+  <deletedFolders>process/Manufacture/Megha/TalendDemo</deletedFolders>
+  <deletedFolders>process/Manufacture/Megha/TalendDemo/Demo_27_May_24</deletedFolders>
+  <deletedFolders>process/Manufacture/Megha/TalendDemo/Demo_27_May_24/Manufacture</deletedFolders>
+  <deletedFolders>process/Pharma/Megha</deletedFolders>
+  <deletedFolders>process/Pharma/Megha/TalendDemo</deletedFolders>
+  <deletedFolders>process/Pharma/Megha/TalendDemo/Demo_27_May_24</deletedFolders>
+  <deletedFolders>process/Pharma/Megha/TalendDemo/Demo_27_May_24/Pharma</deletedFolders>
+</recyclebin:RecycleBin>
