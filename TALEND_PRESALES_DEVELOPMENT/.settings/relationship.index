@@ -1,0 +1,50 @@
+[ {
+  "baseItem" : {
+    "id" : "_TGfYQCMpEe-b8t9hh6Yleg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_3p8nkCL8Ee-b8t9hh6Yleg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_rJYbQCMCEe-b8t9hh6Yleg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_3p8nkCL8Ee-b8t9hh6Yleg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_3p8nkCL8Ee-b8t9hh6Yleg - medications",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_3p8nkCL8Ee-b8t9hh6Yleg - sales",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_piE0gCMpEe-b8t9hh6Yleg - Aggregated",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_wgDzwCL8Ee-b8t9hh6Yleg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_3p8nkCL8Ee-b8t9hh6Yleg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_3p8nkCL8Ee-b8t9hh6Yleg - medications",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+} ]
