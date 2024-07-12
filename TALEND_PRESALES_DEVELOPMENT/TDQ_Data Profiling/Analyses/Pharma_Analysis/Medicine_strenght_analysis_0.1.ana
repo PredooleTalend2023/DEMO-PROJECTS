@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.indicators.sql="http://dataquality.indicators.sql" xmlns:dataquality.rules="http://dataquality.rules" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_xdXvYEAuEe-V5t9uxa3YwQ" name="Medicine_strenght_analysis" creationDate="2024-07-12T14:41:50.352+0530" defaultContext="Default">
+    <clientDependency href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_KMNRgD6LEe-X9IYs3E3LHQ"/>
+    <clientDependency href="../../../TDQ_Libraries/Rules/SQL/Medicine_Strength_0.1.rules#_8_kAMEAuEe-V5t9uxa3YwQ"/>
+    <taggedValue xmi:id="_xdXvYUAuEe-V5t9uxa3YwQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_xdXvYkAuEe-V5t9uxa3YwQ" tag="Author" value="megha.m@predoolecom_nfr"/>
+    <taggedValue xmi:id="_xdXvY0AuEe-V5t9uxa3YwQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_xdXvZEAuEe-V5t9uxa3YwQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_xdXvZUAuEe-V5t9uxa3YwQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_EBGwUUAvEe-V5t9uxa3YwQ" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_EBGwU0AvEe-V5t9uxa3YwQ" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <context xmi:id="_xdXvZkAuEe-V5t9uxa3YwQ">
+      <connection href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_BCFboCL9Ee-b8t9hh6Yleg"/>
+      <analysedElements xsi:type="relational:TdTable" href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_BTph8D52Ee-X9IYs3E3LHQ"/>
+    </context>
+    <results xmi:id="_xdXvZ0AuEe-V5t9uxa3YwQ">
+      <resultMetadata xmi:id="_xdXvaEAuEe-V5t9uxa3YwQ" executionDate="2024-07-12T14:47:16.047+0530" executionDuration="196" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_xdXvaUAuEe-V5t9uxa3YwQ" count="150" computed="true">
+        <analyzedElement xsi:type="relational:TdTable" href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_BTph8D52Ee-X9IYs3E3LHQ"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_h_ZJAEAvEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM &quot;Pharma_Demo&quot;.&quot;pharma_demo&quot;.&quot;medications&quot; " language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xmi:id="_h_BVkEAvEe-V5t9uxa3YwQ" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_h_BVkUAvEe-V5t9uxa3YwQ" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_h_BVkkAvEe-V5t9uxa3YwQ" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_h_BVk0AvEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators.sql:WhereRuleIndicator" xmi:id="_EBGwUkAvEe-V5t9uxa3YwQ" count="150" computed="true" userCount="91">
+        <parameters xmi:id="_NTED4EAvEe-V5t9uxa3YwQ"/>
+        <analyzedElement xsi:type="relational:TdTable" href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_BTph8D52Ee-X9IYs3E3LHQ"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Rules/SQL/Medicine_Strength_0.1.rules#_NpWSYEAuEe-V5t9uxa3YwQ"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_h_ZJAUAvEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM &quot;Pharma_Demo&quot;.&quot;pharma_demo&quot;.&quot;medications&quot;   WHERE (Strength &lt;= '400 mg')" language="Microsoft SQL Server"/>
+        <builtInIndicatorDefinition xsi:type="dataquality.rules:WhereRule" xmi:id="_h_UQgEAvEe-V5t9uxa3YwQ" name="Medicine_Strength" criticalityLevel="1" whereExpression="Strength &lt;= '400 mg'">
+          <taggedValue xmi:id="_h_U3kEAvEe-V5t9uxa3YwQ" tag="Status" value="development"/>
+          <taggedValue xmi:id="_h_U3kUAvEe-V5t9uxa3YwQ" tag="Author" value="megha.m@predoolecom_nfr"/>
+          <taggedValue xmi:id="_h_U3kkAvEe-V5t9uxa3YwQ" tag="Purpose" value=""/>
+          <taggedValue xmi:id="_h_U3k0AvEe-V5t9uxa3YwQ" tag="Description" value=""/>
+          <taggedValue xmi:id="_h_U3lEAvEe-V5t9uxa3YwQ" tag="Version" value="0.1"/>
+          <taggedValue xmi:id="_h_U3lUAvEe-V5t9uxa3YwQ" tag="Validation_Status" value="true"/>
+          <sqlGenericExpression xmi:id="_h_U3lkAvEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+    </results>
+    <parameters xmi:id="_xdXvakAuEe-V5t9uxa3YwQ" dataFilter="_EBPTMEAvEe-V5t9uxa3YwQ" analysisType="Table Analysis"/>
+    <contextType xmi:id="_EBGwUEAvEe-V5t9uxa3YwQ" confirmationNeeded="false" hide="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_EBPTMEAvEe-V5t9uxa3YwQ" name="Medicine_strenght_analysis">
+    <ranges xmi:id="_EBPTMUAvEe-V5t9uxa3YwQ">
+      <expressions xmi:id="_EBPTMkAvEe-V5t9uxa3YwQ">
+        <expression xsi:type="relational:TdExpression" xmi:id="_EBPTM0AvEe-V5t9uxa3YwQ" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>

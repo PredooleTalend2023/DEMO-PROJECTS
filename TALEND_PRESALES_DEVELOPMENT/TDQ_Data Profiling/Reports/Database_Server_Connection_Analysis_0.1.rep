@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_RUXEET9IEe-OQu0QyysZ0g" name="Database_Server_Connection_Analysis" creationDate="2024-07-11T11:11:50.399+0530">
+  <clientDependency href="../Analyses/Pharma_Analysis/Database_Server_Connection_Analysis_0.1.ana#_RUfm8D9IEe-OQu0QyysZ0g"/>
+  <taggedValue xmi:id="_RUXEEj9IEe-OQu0QyysZ0g" tag="OutputFolder" value=""/>
+  <taggedValue xmi:id="_RUXEEz9IEe-OQu0QyysZ0g" tag="REP_DBINFO_DBTYPE" value="HSQL"/>
+  <taggedValue xmi:id="_RUXEFD9IEe-OQu0QyysZ0g" tag="REP_DBINFO_DBVERSION" value=""/>
+  <taggedValue xmi:id="_RUXEFT9IEe-OQu0QyysZ0g" tag="REP_DBINFO_HOST" value=""/>
+  <taggedValue xmi:id="_RUXEFj9IEe-OQu0QyysZ0g" tag="REP_DBINFO_PORT" value=""/>
+  <taggedValue xmi:id="_RUXEFz9IEe-OQu0QyysZ0g" tag="REP_DBINFO_WAREHOUSE" value=""/>
+  <taggedValue xmi:id="_RUXEGD9IEe-OQu0QyysZ0g" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
+  <taggedValue xmi:id="_RUXEGT9IEe-OQu0QyysZ0g" tag="REP_DBINFO_SCHEMA" value=""/>
+  <taggedValue xmi:id="_RUXEGj9IEe-OQu0QyysZ0g" tag="REP_DBINFO_USER" value="sa"/>
+  <taggedValue xmi:id="_RUXEGz9IEe-OQu0QyysZ0g" tag="REP_DBINFO_PASSWORD" value="enc:system.encryption.key.v1:HEA0FJZ/ySWsX/kKrSjS505evVdaLWQ0R1K3VA=="/>
+  <taggedValue xmi:id="_RUXEHD9IEe-OQu0QyysZ0g" tag="REP_DBINFO_PARAMETER" value=""/>
+  <taggedValue xmi:id="_RUXEHT9IEe-OQu0QyysZ0g" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:C:\Program Files (x86)\Talend-Studio\studio\workspace\TDQ_reporting_db\talend_dq"/>
+  <taggedValue xmi:id="_RUXEHj9IEe-OQu0QyysZ0g" tag="REP_DBINFO_DRIVER" value="org.hsqldb.jdbcDriver"/>
+  <taggedValue xmi:id="_RUXEHz9IEe-OQu0QyysZ0g" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.HSQLDialect"/>
+  <taggedValue xmi:id="_RUXEID9IEe-OQu0QyysZ0g" tag="REP_PASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_RUXEIT9IEe-OQu0QyysZ0g" tag="Author" value="megha.m@predoolecom_nfr"/>
+  <analysisMap xmi:id="_RUXEIj9IEe-OQu0QyysZ0g" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/Pharma_Analysis/Database_Server_Connection_Analysis_0.1.ana#_Nhh6YT9CEe-OQu0QyysZ0g"/>
+  </analysisMap>
+</dataquality.reports:TdReport>

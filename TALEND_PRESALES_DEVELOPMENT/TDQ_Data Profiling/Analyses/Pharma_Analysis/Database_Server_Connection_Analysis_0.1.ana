@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.schema="http://dataquality.indicators.schema" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <dataquality.analysis:Analysis xmi:id="_Nhh6YT9CEe-OQu0QyysZ0g" name="Database_Server_Connection_Analysis" supplierDependency="_RUfm8D9IEe-OQu0QyysZ0g" creationDate="2024-07-11T10:28:27.833+0530">
+    <clientDependency href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_KMNRgD6LEe-X9IYs3E3LHQ"/>
+    <taggedValue xmi:id="_Nhh6Yj9CEe-OQu0QyysZ0g" tag="Status" value="development"/>
+    <taggedValue xmi:id="_Nhh6Yz9CEe-OQu0QyysZ0g" tag="Author" value="megha.m@predoolecom_nfr"/>
+    <taggedValue xmi:id="_Nhh6ZD9CEe-OQu0QyysZ0g" tag="Purpose" value="Overview of a database structure"/>
+    <taggedValue xmi:id="_Nhh6ZT9CEe-OQu0QyysZ0g" tag="Description"/>
+    <taggedValue xmi:id="_Nhh6Zj9CEe-OQu0QyysZ0g" tag="Version" value="0.1"/>
+    <context xmi:id="_Nhh6Zz9CEe-OQu0QyysZ0g">
+      <connection href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_BCFboCL9Ee-b8t9hh6Yleg"/>
+      <analysedElements xsi:type="TalendMetadata:DatabaseConnection" href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_BCFboCL9Ee-b8t9hh6Yleg"/>
+    </context>
+    <results xmi:id="_Nhh6aD9CEe-OQu0QyysZ0g">
+      <resultMetadata xmi:id="_Nhh6aT9CEe-OQu0QyysZ0g" executionDate="2024-07-11T10:29:12.302+0530" executionDuration="8268" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+      <indicators xsi:type="dataquality.indicators.schema:ConnectionIndicator" xmi:id="_Nhh6aj9CEe-OQu0QyysZ0g" computed="true" tableCount="7" keyCount="6" indexCount="7" tableRowCount="11452" catalogCount="1">
+        <analyzedElement xsi:type="TalendMetadata:DatabaseConnection" href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_BCFboCL9Ee-b8t9hh6Yleg"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Connection_Overview_0.1.definition#_nZEo8MYSEd27NP4lvE0A4w"/>
+        <catalogIndicators xmi:id="_VXDsMD9CEe-OQu0QyysZ0g" tableCount="7" keyCount="6" indexCount="7" tableRowCount="11452" schemaCount="1">
+          <analyzedElement xsi:type="orgomg.cwm.resource.relational:Catalog" href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_9DpsYD51Ee-X9IYs3E3LHQ"/>
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Catalog_Overview_0.1.definition#_QwDiwMYUEd27NP4lvE0A4w"/>
+          <schemaIndicators xmi:id="_VXDsMT9CEe-OQu0QyysZ0g" tableCount="7" keyCount="6" indexCount="7" tableRowCount="11452">
+            <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_9DpsYT51Ee-X9IYs3E3LHQ"/>
+            <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+            <tableIndicators xmi:id="_VXDsMj9CEe-OQu0QyysZ0g" rowCount="200" tableName="drugs" keyCount="1" indexCount="1">
+              <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+            </tableIndicators>
+            <tableIndicators xmi:id="_VXDsMz9CEe-OQu0QyysZ0g" rowCount="100" tableName="Employees" keyCount="1" indexCount="2">
+              <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+            </tableIndicators>
+            <tableIndicators xmi:id="_VXDsND9CEe-OQu0QyysZ0g" rowCount="100" tableName="manufacturers" keyCount="1" indexCount="1">
+              <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+            </tableIndicators>
+            <tableIndicators xmi:id="_VXDsNT9CEe-OQu0QyysZ0g" rowCount="300" tableName="medicationdrugs">
+              <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+            </tableIndicators>
+            <tableIndicators xmi:id="_VXDsNj9CEe-OQu0QyysZ0g" rowCount="150" tableName="medications" keyCount="1" indexCount="1">
+              <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+            </tableIndicators>
+            <tableIndicators xmi:id="_VXDsNz9CEe-OQu0QyysZ0g" rowCount="10100" tableName="pharmacies" keyCount="1" indexCount="1">
+              <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+            </tableIndicators>
+            <tableIndicators xmi:id="_VXDsOD9CEe-OQu0QyysZ0g" rowCount="502" tableName="sales" keyCount="1" indexCount="1">
+              <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+            </tableIndicators>
+          </schemaIndicators>
+        </catalogIndicators>
+      </indicators>
+    </results>
+    <parameters xmi:id="_Nhh6bT9CEe-OQu0QyysZ0g" analysisType="Connection Analysis"/>
+  </dataquality.analysis:Analysis>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_RUfm8D9IEe-OQu0QyysZ0g" kind="Usage" supplier="_Nhh6YT9CEe-OQu0QyysZ0g">
+    <client xsi:type="dataquality.reports:TdReport" href="../../Reports/Database_Server_Connection_Analysis_0.1.rep#_RUXEET9IEe-OQu0QyysZ0g"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>

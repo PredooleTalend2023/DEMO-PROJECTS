@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_NpWSYEAuEe-V5t9uxa3YwQ" name="Medicine_Strength" supplierDependency="_8_kAMEAuEe-V5t9uxa3YwQ" criticalityLevel="1" whereExpression="Strength &lt;= '400 mg'">
+    <taggedValue xmi:id="_NpWSYUAuEe-V5t9uxa3YwQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_NpWSYkAuEe-V5t9uxa3YwQ" tag="Author" value="megha.m@predoolecom_nfr"/>
+    <taggedValue xmi:id="_NpWSY0AuEe-V5t9uxa3YwQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_NpWSZEAuEe-V5t9uxa3YwQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_NpWSZUAuEe-V5t9uxa3YwQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_NpWSZkAuEe-V5t9uxa3YwQ" tag="Validation_Status" value="true"/>
+    <categories href="../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_NpWSZ0AuEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_8_kAMEAuEe-V5t9uxa3YwQ" kind="Usage" supplier="_NpWSYEAuEe-V5t9uxa3YwQ">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/Pharma_Analysis/Medicine_strenght_analysis_0.1.ana#_xdXvYEAuEe-V5t9uxa3YwQ"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>

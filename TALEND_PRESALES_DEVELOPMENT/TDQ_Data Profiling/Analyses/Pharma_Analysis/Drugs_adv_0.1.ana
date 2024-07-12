@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_7WGXwEAdEe-V5t9uxa3YwQ" name="Drugs_adv" creationDate="2024-07-12T12:41:15.166+0530" defaultContext="Default">
+    <taggedValue xmi:id="_7WGXwUAdEe-V5t9uxa3YwQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_7WGXwkAdEe-V5t9uxa3YwQ" tag="Author" value="megha.m@predoolecom_nfr"/>
+    <taggedValue xmi:id="_7WGXw0AdEe-V5t9uxa3YwQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_7WGXxEAdEe-V5t9uxa3YwQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_7WGXxUAdEe-V5t9uxa3YwQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_7dn8EUAdEe-V5t9uxa3YwQ" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_7dn8EkAdEe-V5t9uxa3YwQ" tag="PREVIEW_ROW_NUMBER" value="999"/>
+    <taggedValue xmi:id="_7dqYUEAdEe-V5t9uxa3YwQ" tag="Is Use Sample Data" value="false"/>
+    <taggedValue xmi:id="_7dqYUUAdEe-V5t9uxa3YwQ" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <context xmi:id="_7WGXxkAdEe-V5t9uxa3YwQ"/>
+    <results xmi:id="_7WGXx0AdEe-V5t9uxa3YwQ">
+      <resultMetadata xmi:id="_7WGXyEAdEe-V5t9uxa3YwQ" executionDate="2024-07-12T12:43:16.086+0530" executionDuration="31" message="" executionNumber="4" lastRunOk="true" lastExecutionNumberOk="2"/>
+      <indicators xsi:type="dataquality.indicators.columnset:SimpleStatIndicator" xmi:id="_7WGXyUAdEe-V5t9uxa3YwQ" count="90" computed="true" listRows="ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A6578700000000077040000000078" uniqueCount="90" distinctCount="90">
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Multiple_Column_Simple_Statistics_0.1.definition#_JoeMkM-jEd6qN5aKpPNGTg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_CkkJkEAeEe-V5t9uxa3YwQ" body="SELECT &quot;DrugID&quot;,&quot;DrugName&quot;,&quot;ActiveIngredient&quot;,&quot;DosageForm&quot;,&quot;Strength&quot;,COUNT(*) FROM &quot;Pharma_Demo&quot;.&quot;pharma_demo&quot;.&quot;drugs_adv&quot;  GROUP BY &quot;DrugID&quot;,&quot;DrugName&quot;,&quot;ActiveIngredient&quot;,&quot;DosageForm&quot;,&quot;Strength&quot;" language="SQL"/>
+        <rowCountIndicator xmi:id="_7WGXykAdEe-V5t9uxa3YwQ" count="90" computed="true">
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+          <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_CkkJkUAeEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM &quot;Pharma_Demo&quot;.&quot;pharma_demo&quot;.&quot;drugs_adv&quot; " language="SQL"/>
+          <builtInIndicatorDefinition xmi:id="_CkQnkEAeEe-V5t9uxa3YwQ" name="Row Count" label="Row Count">
+            <taggedValue xmi:id="_CkQnkUAeEe-V5t9uxa3YwQ" tag="Description" value="counts the number of rows"/>
+            <taggedValue xmi:id="_CkQnkkAeEe-V5t9uxa3YwQ" tag="Purpose" value="evaluates the number of records"/>
+            <sqlGenericExpression xmi:id="_CkQnk0AeEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+          </builtInIndicatorDefinition>
+        </rowCountIndicator>
+        <uniqueCountIndicator xmi:id="_7WGXy0AdEe-V5t9uxa3YwQ" count="90" computed="true" uniqueValueCount="90">
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+          <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_CkkJlEAeEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM (SELECT &quot;DrugID&quot;,&quot;DrugName&quot;,&quot;ActiveIngredient&quot;,&quot;DosageForm&quot;,&quot;Strength&quot;, COUNT(*) mycount FROM &quot;Pharma_Demo&quot;.&quot;pharma_demo&quot;.&quot;drugs_adv&quot;  GROUP BY &quot;DrugID&quot;,&quot;DrugName&quot;,&quot;ActiveIngredient&quot;,&quot;DosageForm&quot;,&quot;Strength&quot; HAVING COUNT(*) = 1) AS myquery" language="Microsoft SQL Server"/>
+          <builtInIndicatorDefinition xmi:id="_CkaYmkAeEe-V5t9uxa3YwQ" name="Unique Count" label="Unique Count">
+            <taggedValue xmi:id="_CkaYm0AeEe-V5t9uxa3YwQ" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
+            <taggedValue xmi:id="_CkaYnEAeEe-V5t9uxa3YwQ" tag="Purpose" value="evaluates the number of unique records"/>
+            <sqlGenericExpression xmi:id="_CkaYnUAeEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
+            <sqlGenericExpression xmi:id="_CkaYnkAeEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount = 1) AS myquery" language="MySQL"/>
+            <sqlGenericExpression xmi:id="_CkaYn0AeEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) myquery" language="Oracle"/>
+            <sqlGenericExpression xmi:id="_CkaYoEAeEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount = 1) AS myquery" language="Teradata"/>
+            <sqlGenericExpression xmi:id="_CkaYoUAeEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="Microsoft SQL Server"/>
+            <sqlGenericExpression xmi:id="_CkaYokAeEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+            <sqlGenericExpression xmi:id="_CkaYo0AeEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1)  myquery" language="Hive" version=""/>
+          </builtInIndicatorDefinition>
+        </uniqueCountIndicator>
+        <distinctCountIndicator xmi:id="_7WGXzEAdEe-V5t9uxa3YwQ" count="90" computed="true" distinctValueCount="90">
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+          <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_CkkJkkAeEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM (SELECT DISTINCT &quot;DrugID&quot;,&quot;DrugName&quot;,&quot;ActiveIngredient&quot;,&quot;DosageForm&quot;,&quot;Strength&quot; FROM &quot;Pharma_Demo&quot;.&quot;pharma_demo&quot;.&quot;drugs_adv&quot; ) A" language="SQL"/>
+          <builtInIndicatorDefinition xmi:id="_CkQnlEAeEe-V5t9uxa3YwQ" name="Distinct Count" label="Distinct Count">
+            <taggedValue xmi:id="_CkQnlUAeEe-V5t9uxa3YwQ" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+            <taggedValue xmi:id="_CkQnlkAeEe-V5t9uxa3YwQ" tag="Purpose" value="evaluates the number of distinct records"/>
+            <sqlGenericExpression xmi:id="_CkQnl0AeEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+          </builtInIndicatorDefinition>
+        </distinctCountIndicator>
+        <duplicateCountIndicator xmi:id="_7WGXzUAdEe-V5t9uxa3YwQ" count="90" computed="true" duplicateValueCount="0">
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+          <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_CkkJk0AeEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM (SELECT &quot;DrugID&quot;,&quot;DrugName&quot;,&quot;ActiveIngredient&quot;,&quot;DosageForm&quot;,&quot;Strength&quot;, COUNT(*) mycount FROM &quot;Pharma_Demo&quot;.&quot;pharma_demo&quot;.&quot;drugs_adv&quot;  m  GROUP BY &quot;DrugID&quot;,&quot;DrugName&quot;,&quot;ActiveIngredient&quot;,&quot;DosageForm&quot;,&quot;Strength&quot; HAVING COUNT(*) > 1) myquery" language="Microsoft SQL Server"/>
+          <builtInIndicatorDefinition xmi:id="_CkaYkEAeEe-V5t9uxa3YwQ" name="Duplicate Count" label="Duplicate Count">
+            <taggedValue xmi:id="_CkaYkUAeEe-V5t9uxa3YwQ" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
+            <taggedValue xmi:id="_CkaYkkAeEe-V5t9uxa3YwQ" tag="Purpose" value="evaluates the number of duplicated records"/>
+            <sqlGenericExpression xmi:id="_CkaYk0AeEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
+            <sqlGenericExpression xmi:id="_CkaYlEAeEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount > 1) AS myquery" language="MySQL"/>
+            <sqlGenericExpression xmi:id="_CkaYlUAeEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Oracle"/>
+            <sqlGenericExpression xmi:id="_CkaYlkAeEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount > 1) AS myquery" language="Teradata"/>
+            <sqlGenericExpression xmi:id="_CkaYl0AeEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Microsoft SQL Server"/>
+            <sqlGenericExpression xmi:id="_CkaYmEAeEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+            <sqlGenericExpression xmi:id="_CkaYmUAeEe-V5t9uxa3YwQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
+          </builtInIndicatorDefinition>
+        </duplicateCountIndicator>
+      </indicators>
+    </results>
+    <parameters xmi:id="_7WGXzkAdEe-V5t9uxa3YwQ" dataFilter="_7drmcEAdEe-V5t9uxa3YwQ" analysisType="Column Set Analysis"/>
+    <contextType xmi:id="_7dn8EEAdEe-V5t9uxa3YwQ" confirmationNeeded="false" hide="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_7drmcEAdEe-V5t9uxa3YwQ" name="Drugs_adv">
+    <ranges xmi:id="_7drmcUAdEe-V5t9uxa3YwQ">
+      <expressions xmi:id="_7drmckAdEe-V5t9uxa3YwQ">
+        <expression xsi:type="relational:TdExpression" xmi:id="_7drmc0AdEe-V5t9uxa3YwQ" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>

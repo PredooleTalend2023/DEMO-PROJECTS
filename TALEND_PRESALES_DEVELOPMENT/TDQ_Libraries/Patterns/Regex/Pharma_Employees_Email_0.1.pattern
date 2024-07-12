@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.domain.pattern:Pattern xmi:id="_cy2nAD9QEe-OQu0QyysZ0g" name="Pharma_Employees_Email" supplierDependency="_tqfdED9REe-OQu0QyysZ0g">
+    <taggedValue xmi:id="_cy2nAT9QEe-OQu0QyysZ0g" tag="Status" value="development"/>
+    <taggedValue xmi:id="_cy2nAj9QEe-OQu0QyysZ0g" tag="Author" value="megha.m@predoolecom_nfr"/>
+    <taggedValue xmi:id="_cy2nAz9QEe-OQu0QyysZ0g" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_cy2nBD9QEe-OQu0QyysZ0g" tag="Description" value=""/>
+    <taggedValue xmi:id="_cy2nBT9QEe-OQu0QyysZ0g" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_cy2nBj9QEe-OQu0QyysZ0g" tag="Validation_Status" value="true"/>
+    <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_cy2nBz9QEe-OQu0QyysZ0g" expressionType="REGEXP">
+      <expression xmi:id="_cy2nCD9QEe-OQu0QyysZ0g" body="'^[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z][A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]@[A-Z][A-Z][A-Z][A-Z][A-Z][A-Z][A-Z]\.[A-Z][A-Z][A-Z]$'" language="Microsoft SQL Server" modificationDate="2024-07-11 14:37:07"/>
+    </components>
+  </dataquality.domain.pattern:Pattern>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_tqfdED9REe-OQu0QyysZ0g" kind="Usage" supplier="_cy2nAD9QEe-OQu0QyysZ0g"/>
+</xmi:XMI>
