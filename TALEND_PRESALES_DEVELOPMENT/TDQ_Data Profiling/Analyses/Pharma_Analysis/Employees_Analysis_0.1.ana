@@ -15,20 +15,20 @@
     <context xmi:id="_upt510AfEe-V5t9uxa3YwQ">
       <connection href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_BCFboCL9Ee-b8t9hh6Yleg"/>
       <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_j-0dYkAfEe-V5t9uxa3YwQ"/>
-      <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_j-0dbkAfEe-V5t9uxa3YwQ"/>
       <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_j-0dZkAfEe-V5t9uxa3YwQ"/>
       <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_j-0dakAfEe-V5t9uxa3YwQ"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_j-0dbkAfEe-V5t9uxa3YwQ"/>
       <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_j-0dckAfEe-V5t9uxa3YwQ"/>
     </context>
     <results xmi:id="_upt52EAfEe-V5t9uxa3YwQ">
-      <resultMetadata xmi:id="_upt52UAfEe-V5t9uxa3YwQ" executionDate="2024-07-12T17:07:56.004+0530" executionDuration="15" message="" executionNumber="23" lastExecutionNumberOk="9"/>
+      <resultMetadata xmi:id="_upt52UAfEe-V5t9uxa3YwQ" executionDate="2024-07-12T17:13:38.655+0530" executionDuration="11" message="" executionNumber="26" lastExecutionNumberOk="9"/>
       <indicators xsi:type="dataquality.indicators.columnset:SimpleStatIndicator" xmi:id="_upt52kAfEe-V5t9uxa3YwQ" computed="true" storeData="true" listRows="ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001757200135B4C6A6176612E6C616E672E4F626A6563743B90CE589F1073296C02000078700000000078" uniqueCount="94" distinctCount="97">
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Multiple_Column_Simple_Statistics_0.1.definition#_JoeMkM-jEd6qN5aKpPNGTg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_wSi40EAfEe-V5t9uxa3YwQ" body="SELECT &quot;emp_id&quot;,&quot;email&quot;,&quot;first_name&quot;,&quot;last_name&quot;,&quot;phone&quot;,COUNT(*) FROM &quot;Pharma_Demo&quot;.&quot;pharma_demo&quot;.&quot;EMP&quot;  GROUP BY &quot;emp_id&quot;,&quot;email&quot;,&quot;first_name&quot;,&quot;last_name&quot;,&quot;phone&quot;" language="SQL"/>
         <analyzedColumns xsi:type="relational:TdColumn" href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_j-0dYkAfEe-V5t9uxa3YwQ"/>
-        <analyzedColumns xsi:type="relational:TdColumn" href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_j-0dbkAfEe-V5t9uxa3YwQ"/>
         <analyzedColumns xsi:type="relational:TdColumn" href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_j-0dZkAfEe-V5t9uxa3YwQ"/>
         <analyzedColumns xsi:type="relational:TdColumn" href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_j-0dakAfEe-V5t9uxa3YwQ"/>
+        <analyzedColumns xsi:type="relational:TdColumn" href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_j-0dbkAfEe-V5t9uxa3YwQ"/>
         <analyzedColumns xsi:type="relational:TdColumn" href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_j-0dckAfEe-V5t9uxa3YwQ"/>
         <rowCountIndicator xmi:id="_upt520AfEe-V5t9uxa3YwQ" count="100" computed="true">
           <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>

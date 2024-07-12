@@ -15,7 +15,7 @@
       <analysedElements xsi:type="relational:TdTable" href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_BTph8D52Ee-X9IYs3E3LHQ"/>
     </context>
     <results xmi:id="_xdXvZ0AuEe-V5t9uxa3YwQ">
-      <resultMetadata xmi:id="_xdXvaEAuEe-V5t9uxa3YwQ" executionDate="2024-07-12T14:47:16.047+0530" executionDuration="196" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+      <resultMetadata xmi:id="_xdXvaEAuEe-V5t9uxa3YwQ" executionDate="2024-07-12T17:44:52.056+0530" executionDuration="156" message="" executionNumber="2" lastRunOk="true" lastExecutionNumberOk="2"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_xdXvaUAuEe-V5t9uxa3YwQ" count="150" computed="true">
         <analyzedElement xsi:type="relational:TdTable" href="../../../metadata/connections/Megha/Demo_Connections/MSSQL_Pharma_demo_0.1.item#_BTph8D52Ee-X9IYs3E3LHQ"/>
         <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
